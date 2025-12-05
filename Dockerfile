@@ -23,15 +23,21 @@ RUN mvn clean package -DskipTests -U
 FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 
+# Crear usuario no-root para seguridad (requerido por Digital Ocean)
+RUN addgroup -S spring && adduser -S spring -G spring
+USER spring:spring
+
 # Copiar el JAR compilado
 COPY --from=build /app/target/*.jar app.jar
 
-# Exponer puerto
+# Exponer puerto (Digital Ocean usa variable PORT dinámica)
 EXPOSE 8080
 
 # Variables de entorno por defecto
 ENV JAVA_OPTS="-Xmx512m -Xms256m"
+ENV SERVER_PORT=8080
 
-# Comando de inicio
-ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -jar /app/app.jar"]
+# Comando de inicio con soporte para PORT de Digital Ocean
+# Digital Ocean App Platform proporciona la variable PORT
+ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -Dserver.port=${PORT:-$SERVER_PORT} -jar /app/app.jar"]
 

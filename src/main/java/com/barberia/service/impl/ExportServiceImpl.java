@@ -2,8 +2,7 @@ package com.barberia.service.impl;
 
 import com.barberia.dto.RegistroContableResponse;
 import com.barberia.service.ExportService;
-import com.itextpdf.html2pdf.ConverterProperties;
-import com.itextpdf.html2pdf.HtmlConverter;
+import com.openhtmltopdf.pdfboxout.PdfRendererBuilder;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -242,10 +241,12 @@ public class ExportServiceImpl implements ExportService {
             .append(LocalDateTime.now().format(DATE_FORMATTER)).append(" - BarberiaApp</p>");
         html.append("</body></html>");
 
-        // Convertir HTML a PDF usando iText7
+        // Convertir HTML a PDF usando OpenHTMLToPDF
         try {
-            ConverterProperties properties = new ConverterProperties();
-            HtmlConverter.convertToPdf(html.toString(), outputStream, properties);
+            PdfRendererBuilder builder = new PdfRendererBuilder();
+            builder.withHtmlContent(html.toString(), null);
+            builder.toStream(outputStream);
+            builder.run();
             log.info("Exportación a PDF completada exitosamente");
         } catch (Exception e) {
             log.error("Error al convertir HTML a PDF: {}", e.getMessage(), e);

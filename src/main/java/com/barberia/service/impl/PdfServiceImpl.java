@@ -4,11 +4,7 @@ import com.barberia.entity.*;
 import com.barberia.exception.ResourceNotFoundException;
 import com.barberia.repository.VentaRepository;
 import com.barberia.service.PdfService;
-import com.itextpdf.html2pdf.ConverterProperties;
-import com.itextpdf.html2pdf.HtmlConverter;
-import com.itextpdf.kernel.colors.ColorConstants;
-import com.itextpdf.kernel.pdf.PdfDocument;
-import com.itextpdf.kernel.pdf.PdfWriter;
+import com.openhtmltopdf.pdfboxout.PdfRendererBuilder;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -18,7 +14,7 @@ import java.io.ByteArrayOutputStream;
 import java.time.format.DateTimeFormatter;
 
 /**
- * Servicio de generación de comprobantes PDF usando iText7.
+ * Servicio de generación de comprobantes PDF usando OpenHTMLToPDF.
  */
 @Service
 @RequiredArgsConstructor
@@ -39,9 +35,11 @@ public class PdfServiceImpl implements PdfService {
 
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         try {
-            // Convertir HTML a PDF usando iText7
-            ConverterProperties properties = new ConverterProperties();
-            HtmlConverter.convertToPdf(htmlContent, outputStream, properties);
+            // Convertir HTML a PDF usando OpenHTMLToPDF
+            PdfRendererBuilder builder = new PdfRendererBuilder();
+            builder.withHtmlContent(htmlContent, null);
+            builder.toStream(outputStream);
+            builder.run();
             
             log.info("Comprobante PDF generado exitosamente para venta ID: {}", ventaId);
         } catch (Exception e) {

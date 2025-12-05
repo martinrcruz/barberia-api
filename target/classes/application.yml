@@ -90,8 +90,9 @@ springdoc:
     tags-sorter: alpha
     
 # Configuración del servidor
+# Soporta PORT (Digital Ocean App Platform) y SERVER_PORT (Spring Boot estándar)
 server:
-  port: ${SERVER_PORT:8080}
+  port: ${PORT:${SERVER_PORT:8080}}
   servlet:
     context-path: /api
   error:
