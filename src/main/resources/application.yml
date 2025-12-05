@@ -5,14 +5,14 @@ spring:
     allow-bean-definition-overriding: true
     
   datasource:
-    url: ${DB_URL:jdbc:mysql://localhost:3308/barberiapp?useSSL=false&serverTimezone=America/Santiago&allowPublicKeyRetrieval=true}
-    username: ${DB_USERNAME:barberiapp_user}
-    password: ${DB_PASSWORD:barberiapp_pass}
+    url: ${DB_URL:jdbc:mysql://db-mysql-nyc3-58315-do-user-26378492-0.k.db.ondigitalocean.com:25060/barber-db?useSSL=true&requireSSL=true&serverTimezone=America/Santiago&allowPublicKeyRetrieval=true}
+    username: ${DB_USERNAME:doadmin}
+    password: ${DB_PASSWORD:AVNS_qjGpZTJihCU-lOVA2wj}
     driver-class-name: com.mysql.cj.jdbc.Driver
     
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     show-sql: ${SHOW_SQL:false}
     properties:
       hibernate:
