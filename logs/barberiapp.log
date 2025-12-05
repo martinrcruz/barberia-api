@@ -1,0 +1,165 @@
+2025-12-04 10:02:59 [main] INFO  com.barberia.BarberiappApplication - Starting BarberiappApplication using Java 17.0.17 with PID 4359 (/Users/martin/Documents/THINKA/BARBERIAPP/backend/target/classes started by martin in /Users/martin/Documents/THINKA/BARBERIAPP/backend)
+2025-12-04 10:02:59 [main] DEBUG com.barberia.BarberiappApplication - Running with Spring Boot v3.2.1, Spring v6.1.2
+2025-12-04 10:02:59 [main] INFO  com.barberia.BarberiappApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-04 10:02:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04 10:03:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 106 ms. Found 21 JPA repository interfaces.
+2025-12-04 10:03:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-04 10:03:00 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-04 10:03:00 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+2025-12-04 10:03:00 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-12-04 10:03:00 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1780 ms
+2025-12-04 10:03:01 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04 10:03:01 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+2025-12-04 10:03:01 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-04 10:03:01 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2025-12-04 10:03:01 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04 10:03:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-04 10:03:01 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7037a680
+2025-12-04 10:03:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-04 10:03:01 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04 10:03:02 [main] WARN  o.h.boot.model.internal.ToOneBinder - HHH000491: 'com.barberia.entity.Venta.trabajador' uses both @NotFound and FetchType.LAZY. @ManyToOne and @OneToOne associations mapped with @NotFound are forced to EAGER fetching.
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Proveedor
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Sucursal
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Permiso
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.ConfiguracionSucursal
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Compra
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Cliente
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.RegistroContable
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Categoria
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.MetodoPago
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.ConfiguracionSistema
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.MovimientoInventario
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Insumo
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Venta
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Rol
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Documento
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.PersonalizacionVisual
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Servicio
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Producto
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.VarianteProducto
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.DetalleCompra
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.RegistroJornada
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Usuario
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.PagoVenta
+2025-12-04 10:03:02 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.DetalleVenta
+2025-12-04 10:03:03 [main] ERROR o.h.m.internal.MetadataContext - HHH015007: Illegal argument on static metamodel field injection : org.hibernate.envers.DefaultRevisionEntity_#class_; expected type :  org.hibernate.metamodel.model.domain.internal.EntityTypeImpl; encountered type : jakarta.persistence.metamodel.MappedSuperclassType
+2025-12-04 10:03:03 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04 10:03:04 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04 10:03:04 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04 10:03:05 [main] DEBUG c.b.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-12-04 10:03:06 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04 10:03:07 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4ac805af, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77b9002, org.springframework.security.web.context.SecurityContextHolderFilter@7ae5a4ca, org.springframework.security.web.header.HeaderWriterFilter@58e28efd, org.springframework.web.filter.CorsFilter@3eec221b, org.springframework.security.web.authentication.logout.LogoutFilter@444379eb, com.barberia.security.JwtAuthenticationFilter@721fbae2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@387c0e06, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e5700c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@367d083e, org.springframework.security.web.session.SessionManagementFilter@160088f, org.springframework.security.web.access.ExceptionTranslationFilter@74da1cb3, org.springframework.security.web.access.intercept.AuthorizationFilter@1b6ad296]
+2025-12-04 10:03:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2025-12-04 10:03:07 [main] INFO  com.barberia.BarberiappApplication - Started BarberiappApplication in 9.055 seconds (process running for 9.855)
+2025-12-04 10:03:07 [main] INFO  com.barberia.config.DataInitializer - Inicialización de datos completada
+2025-12-04 10:05:41 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04 10:05:41 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-04 10:05:41 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2025-12-04 10:05:41 [http-nio-8080-exec-2] ERROR c.b.security.JwtAuthenticationFilter - Error al procesar JWT: JWT expired 181937303 milliseconds ago at 2025-12-02T10:33:24.000Z. Current time: 2025-12-04T13:05:41.303Z. Allowed clock skew: 0 milliseconds.
+2025-12-04 10:05:44 [http-nio-8080-exec-4] DEBUG c.b.security.JwtAuthenticationFilter - Endpoint público detectado, omitiendo validación JWT: /auth/login
+2025-12-04 10:06:37 [http-nio-8080-exec-8] INFO  c.b.service.impl.PermisoServiceImpl - Listando todos los permisos con paginación
+2025-12-04 10:06:43 [http-nio-8080-exec-7] INFO  c.b.s.impl.MetodoPagoServiceImpl - Listando todos los métodos de pago con paginación
+2025-12-04 10:06:48 [http-nio-8080-exec-3] INFO  c.b.s.impl.MetodoPagoServiceImpl - Listando métodos de pago activos ordenados
+2025-12-04 10:16:00 [http-nio-8080-exec-5] INFO  c.b.s.impl.MetodoPagoServiceImpl - Listando todos los métodos de pago con paginación
+2025-12-04 10:16:25 [http-nio-8080-exec-9] INFO  c.b.s.impl.MetodoPagoServiceImpl - Creando nuevo método de pago: Efectivo
+2025-12-04 10:16:25 [http-nio-8080-exec-9] INFO  c.b.s.impl.MetodoPagoServiceImpl - Método de pago creado exitosamente con ID: 1
+2025-12-04 10:16:25 [http-nio-8080-exec-10] INFO  c.b.s.impl.MetodoPagoServiceImpl - Listando todos los métodos de pago con paginación
+2025-12-04 10:16:28 [http-nio-8080-exec-3] INFO  c.b.s.impl.MetodoPagoServiceImpl - Listando métodos de pago activos ordenados
+2025-12-04 10:16:54 [http-nio-8080-exec-1] INFO  c.b.service.impl.VentaServiceImpl - Generando comprobante para venta: 4
+2025-12-04 10:16:54 [http-nio-8080-exec-1] INFO  c.b.service.impl.PdfServiceImpl - Generando comprobante PDF para venta ID: 4
+2025-12-04 10:16:54 [http-nio-8080-exec-1] INFO  c.b.service.impl.PdfServiceImpl - Comprobante generado exitosamente para venta ID: 4
+2025-12-04 10:18:43 [http-nio-8080-exec-4] INFO  c.b.s.impl.MetodoPagoServiceImpl - Listando métodos de pago activos ordenados
+2025-12-04 10:18:48 [http-nio-8080-exec-7] INFO  c.b.s.impl.MetodoPagoServiceImpl - Listando métodos de pago activos ordenados
+2025-12-04 10:20:40 [http-nio-8080-exec-5] INFO  c.b.s.impl.MetodoPagoServiceImpl - Listando métodos de pago activos ordenados
+2025-12-04 10:20:56 [http-nio-8080-exec-1] INFO  c.b.s.impl.MetodoPagoServiceImpl - Listando métodos de pago activos ordenados
+2025-12-04 10:32:27 [http-nio-8080-exec-10] INFO  c.b.service.impl.PermisoServiceImpl - Listando todos los permisos con paginación
+2025-12-04 10:32:33 [http-nio-8080-exec-2] INFO  c.b.s.impl.MetodoPagoServiceImpl - Listando métodos de pago activos ordenados
+2025-12-04 10:33:22 [http-nio-8080-exec-2] INFO  c.b.service.impl.VentaServiceImpl - Generando comprobante para venta: 1
+2025-12-04 10:33:22 [http-nio-8080-exec-2] INFO  c.b.service.impl.PdfServiceImpl - Generando comprobante PDF para venta ID: 1
+2025-12-04 10:33:22 [http-nio-8080-exec-2] INFO  c.b.service.impl.PdfServiceImpl - Comprobante generado exitosamente para venta ID: 1
+2025-12-04 10:33:23 [http-nio-8080-exec-3] INFO  c.b.service.impl.VentaServiceImpl - Generando comprobante para venta: 4
+2025-12-04 10:33:23 [http-nio-8080-exec-3] INFO  c.b.service.impl.PdfServiceImpl - Generando comprobante PDF para venta ID: 4
+2025-12-04 10:33:23 [http-nio-8080-exec-3] INFO  c.b.service.impl.PdfServiceImpl - Comprobante generado exitosamente para venta ID: 4
+2025-12-04 10:33:41 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04 10:33:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-04 10:33:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-04 10:33:53 [main] INFO  com.barberia.BarberiappApplication - Starting BarberiappApplication using Java 17.0.17 with PID 19565 (/Users/martin/Documents/THINKA/BARBERIAPP/backend/target/classes started by martin in /Users/martin/Documents/THINKA/BARBERIAPP/backend)
+2025-12-04 10:33:53 [main] DEBUG com.barberia.BarberiappApplication - Running with Spring Boot v3.2.1, Spring v6.1.2
+2025-12-04 10:33:53 [main] INFO  com.barberia.BarberiappApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-04 10:33:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04 10:33:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 108 ms. Found 21 JPA repository interfaces.
+2025-12-04 10:33:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-04 10:33:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-04 10:33:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+2025-12-04 10:33:54 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-12-04 10:33:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1559 ms
+2025-12-04 10:33:55 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04 10:33:55 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+2025-12-04 10:33:55 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-04 10:33:55 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2025-12-04 10:33:55 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04 10:33:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-04 10:33:55 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f525e13
+2025-12-04 10:33:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-04 10:33:55 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04 10:33:56 [main] WARN  o.h.boot.model.internal.ToOneBinder - HHH000491: 'com.barberia.entity.Venta.trabajador' uses both @NotFound and FetchType.LAZY. @ManyToOne and @OneToOne associations mapped with @NotFound are forced to EAGER fetching.
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Proveedor
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Sucursal
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Permiso
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.ConfiguracionSucursal
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Compra
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Cliente
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.RegistroContable
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Categoria
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.MetodoPago
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.ConfiguracionSistema
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.MovimientoInventario
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Insumo
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Venta
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Rol
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Documento
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.PersonalizacionVisual
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Servicio
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Producto
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.VarianteProducto
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.DetalleCompra
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.RegistroJornada
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.Usuario
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.PagoVenta
+2025-12-04 10:33:56 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.barberia.entity.DetalleVenta
+2025-12-04 10:33:57 [main] ERROR o.h.m.internal.MetadataContext - HHH015007: Illegal argument on static metamodel field injection : org.hibernate.envers.DefaultRevisionEntity_#class_; expected type :  org.hibernate.metamodel.model.domain.internal.EntityTypeImpl; encountered type : jakarta.persistence.metamodel.MappedSuperclassType
+2025-12-04 10:33:57 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04 10:33:57 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04 10:33:58 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04 10:33:58 [main] DEBUG c.b.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-12-04 10:34:00 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04 10:34:00 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@667333f0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ef88293, org.springframework.security.web.context.SecurityContextHolderFilter@582b8d30, org.springframework.security.web.header.HeaderWriterFilter@3b3f1a12, org.springframework.web.filter.CorsFilter@3e6b1a0d, org.springframework.security.web.authentication.logout.LogoutFilter@585f319e, com.barberia.security.JwtAuthenticationFilter@6ae37b3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@181ae1b4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7baec3e1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9ccdd34, org.springframework.security.web.session.SessionManagementFilter@507147ce, org.springframework.security.web.access.ExceptionTranslationFilter@3bfc7d53, org.springframework.security.web.access.intercept.AuthorizationFilter@3c929623]
+2025-12-04 10:34:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2025-12-04 10:34:01 [main] INFO  com.barberia.BarberiappApplication - Started BarberiappApplication in 8.001 seconds (process running for 8.539)
+2025-12-04 10:34:01 [main] INFO  com.barberia.config.DataInitializer - Inicialización de datos completada
+2025-12-04 10:34:18 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04 10:34:18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-04 10:34:18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-12-04 10:34:18 [http-nio-8080-exec-1] INFO  c.b.service.impl.VentaServiceImpl - Generando comprobante para venta: 1
+2025-12-04 10:34:18 [http-nio-8080-exec-1] INFO  c.b.service.impl.PdfServiceImpl - Generando comprobante PDF para venta ID: 1
+2025-12-04 10:34:19 [http-nio-8080-exec-1] WARN  c.i.h.css.apply.util.FlexApplierUtil - Flex related property justify-content: space-between is not supported yet.
+2025-12-04 10:34:19 [http-nio-8080-exec-1] WARN  c.i.h.css.apply.util.FlexApplierUtil - Flex related property justify-content: space-between is not supported yet.
+2025-12-04 10:34:19 [http-nio-8080-exec-1] WARN  c.i.h.css.apply.util.FlexApplierUtil - Flex related property justify-content: space-between is not supported yet.
+2025-12-04 10:34:19 [http-nio-8080-exec-1] INFO  c.b.service.impl.PdfServiceImpl - Comprobante PDF generado exitosamente para venta ID: 1
+2025-12-04 10:34:31 [http-nio-8080-exec-2] INFO  c.b.service.impl.VentaServiceImpl - Generando comprobante para venta: 4
+2025-12-04 10:34:31 [http-nio-8080-exec-2] INFO  c.b.service.impl.PdfServiceImpl - Generando comprobante PDF para venta ID: 4
+2025-12-04 10:34:31 [http-nio-8080-exec-2] WARN  c.i.h.css.apply.util.FlexApplierUtil - Flex related property justify-content: space-between is not supported yet.
+2025-12-04 10:34:31 [http-nio-8080-exec-2] WARN  c.i.h.css.apply.util.FlexApplierUtil - Flex related property justify-content: space-between is not supported yet.
+2025-12-04 10:34:31 [http-nio-8080-exec-2] WARN  c.i.h.css.apply.util.FlexApplierUtil - Flex related property justify-content: space-between is not supported yet.
+2025-12-04 10:34:31 [http-nio-8080-exec-2] INFO  c.b.service.impl.PdfServiceImpl - Comprobante PDF generado exitosamente para venta ID: 4
+2025-12-04 10:34:40 [http-nio-8080-exec-4] INFO  c.b.s.impl.MetodoPagoServiceImpl - Listando métodos de pago activos ordenados
+2025-12-04 10:34:47 [http-nio-8080-exec-5] INFO  c.b.service.impl.PermisoServiceImpl - Listando todos los permisos con paginación
+2025-12-04 10:34:52 [http-nio-8080-exec-10] INFO  c.b.service.impl.ExportServiceImpl - Exportando 5 registros contables a PDF
+2025-12-04 10:34:52 [http-nio-8080-exec-10] INFO  c.b.service.impl.ExportServiceImpl - Exportación a PDF completada exitosamente
+2025-12-04 10:35:01 [http-nio-8080-exec-4] INFO  c.b.service.impl.ExportServiceImpl - Exportando 5 registros contables a Excel
+2025-12-04 10:35:02 [http-nio-8080-exec-4] INFO  c.b.service.impl.ExportServiceImpl - Exportación a Excel completada exitosamente
+2025-12-04 10:35:07 [http-nio-8080-exec-2] INFO  c.b.s.impl.MetodoPagoServiceImpl - Listando todos los métodos de pago con paginación
+2025-12-04 12:37:01 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m4s635ms).
+2025-12-04 12:40:07 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04 12:40:07 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-04 12:40:07 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
